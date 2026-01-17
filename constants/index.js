@@ -54,7 +54,7 @@ const appetizers = [
 	price: "₹180",
  },
  {
-	name: "Chicken 65",
+	name: "Chicken Soup",
 	region: "South India",
 	detail: "Spicy fried chicken",
 	price: "₹420",
@@ -75,7 +75,7 @@ const mainCourse = [
 	price: "₹480",
  },
  {
-	name: "Biryani (Veg/Chicken)",
+	name: "Biryani [Veg/Chicken]",
 	region: "Hyderabad",
 	detail: "Fragrant rice with spices",
 	price: "₹380/₹520",
