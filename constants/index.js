@@ -1,3 +1,26 @@
+// Restaurant Configuration - Change these values for different clients
+const restaurantConfig = {
+ name: "Velvet Pour",
+ tagline: "Best Bar in Lucknow",
+ phone: "+91 98765 43210",
+ whatsapp: "919876543210", // Without + or spaces
+ email: "info@velvetpour.com",
+ address: {
+	line1: "Summit Building, Gomti Nagar",
+	line2: "Lucknow, Uttar Pradesh 226010",
+	city: "Lucknow",
+	state: "Uttar Pradesh",
+	country: "India"
+ },
+ hours: "Mon-Sun: 12 PM - 1 AM",
+ socialMedia: {
+	instagram: "https://instagram.com/velvetpour",
+	facebook: "#",
+	twitter: "#"
+ },
+ googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.4929305916697!2d80.9931287!3d26.8558896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sGomti%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890",
+};
+
 const navLinks = [
  {
 	id: "menu",
@@ -142,6 +165,7 @@ const allCocktails = [
 	title: "Simple Ingredients, Bold Flavor",
 	description:
 	 "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+	price: "₹450",
  },
  {
 	id: 2,
@@ -149,8 +173,7 @@ const allCocktails = [
 	image: "/images/drink2.png",
 	title: "A Zesty Classic That Never Fails",
 	description:
-	 "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
- },
+	 "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",	price: "₹480", },
  {
 	id: 3,
 	name: "Violet Breeze",
@@ -158,6 +181,7 @@ const allCocktails = [
 	title: "Simple Ingredients, Bold Flavor",
 	description:
 	 "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+	price: "₹520",
  },
  {
 	id: 4,
@@ -166,6 +190,7 @@ const allCocktails = [
 	title: "Crafted With Care, Poured With Love",
 	description:
 	 "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+	price: "₹490",
  },
 ];
 
@@ -201,6 +226,7 @@ const testimonialsList = [
 ];
 
 export {
+ restaurantConfig,
  navLinks,
  appetizers,
  mainCourse,

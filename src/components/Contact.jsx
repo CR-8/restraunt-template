@@ -1,4 +1,4 @@
-import { openingHours, socials } from '../../constants/index.js'
+import { openingHours, socials, restaurantConfig } from '../../constants/index.js'
 import { useGSAP } from '@gsap/react'
 import { SplitText} from 'gsap/all';
 import gsap from 'gsap';
@@ -37,28 +37,43 @@ const Contact = () => {
 	 <div className="content">
 		<h2>Where to Find Us</h2>
 		
-		<div>
-		 <h3>Visit Our Restaurant</h3>
-		 <p>456, Raq Blvd. #404, Los Angeles, CA 90210</p>
+		<div className="grid md:grid-cols-3 gap-8">
+		 <div>
+			<h3 className="text-amber-500 font-bold text-xl mb-3">Address</h3>
+			<p className="text-gray-300">{restaurantConfig.address.line1}</p>
+			<p className="text-gray-300">{restaurantConfig.address.line2}</p>
+			<p className="text-gray-300 mt-2">{restaurantConfig.address.country}</p>
+		 </div>
+		 
+		 <div>
+			<h3 className="text-amber-500 font-bold text-xl mb-3">Hours</h3>
+			<p className="text-gray-300 font-semibold">{restaurantConfig.hours}</p>
+			<div className="mt-4">
+			 <h3 className="text-amber-500 font-bold text-xl mb-2">Contact</h3>
+			 <p className="text-gray-300">{restaurantConfig.phone}</p>
+			 <p className="text-gray-300">{restaurantConfig.email}</p>
+			</div>
+		 </div>
+		 
+		 <div>
+			<h3 className="text-amber-500 font-bold text-xl mb-3">Find Us</h3>
+			<div className="w-full h-48 rounded-lg overflow-hidden shadow-lg">
+			 <iframe 
+				src={restaurantConfig.googleMapsEmbed}
+				width="100%"
+				height="100%"
+				style={{ border: 0 }}
+				allowFullScreen=""
+				loading="lazy"
+				referrerPolicy="no-referrer-when-downgrade"
+				title={`${restaurantConfig.name} Location`}
+			 />
+			</div>
+		 </div>
 		</div>
 		
-		<div>
-		 <h3>Contact Us</h3>
-		 <p>(555) 987-6543</p>
-		 <p>contact@restauranttemplate.com</p>
-		</div>
-		
-		<div>
-		 <h3>Open Every Day</h3>
-		 {openingHours.map((time) => (
-			<p key={time.day}>
-			 {time.day} : {time.time}
-			</p>
-		 ))}
-		</div>
-		
-		<div>
-		 <h3>Socials</h3>
+		<div className="mt-12 pt-8 border-t border-gray-800">
+		 <h3 className="text-center text-amber-500 font-bold text-xl mb-4">Follow Us</h3>
 		 
 		 <div className="flex-center gap-5">
 			{socials.map((social) => (
@@ -68,11 +83,16 @@ const Contact = () => {
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label={social.name}
+				className="hover:scale-110 transition-transform duration-300"
 			 >
-				<img src={social.icon} />
+				<img src={social.icon} className="w-8 h-8" alt={social.name} />
 			 </a>
 			))}
 		 </div>
+		 
+		 <p className="text-center text-gray-500 text-sm mt-8">
+			© 2026 {restaurantConfig.name}. All rights reserved.
+		 </p>
 		</div>
 	 </div>
 	</footer>

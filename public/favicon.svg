@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Martini Glass -->
+  <g fill="url(#gradient)">
+    <!-- Glass Bowl (Triangle) -->
+    <path d="M 25 20 L 50 65 L 75 20 Z" stroke="#f59e0b" stroke-width="2" fill="none"/>
+    
+    <!-- Stem -->
+    <rect x="48" y="65" width="4" height="15" fill="url(#gradient)"/>
+    
+    <!-- Base -->
+    <ellipse cx="50" cy="82" rx="12" ry="3" fill="url(#gradient)"/>
+    
+    <!-- Liquid -->
+    <path d="M 35 35 L 50 60 L 65 35 Z" fill="url(#gradient)" opacity="0.7"/>
+    
+    <!-- Olive on stick -->
+    <circle cx="50" cy="30" r="4" fill="#4ade80"/>
+    <line x1="50" y1="20" x2="50" y2="30" stroke="#d4d4d4" stroke-width="1"/>
+  </g>
+</svg>

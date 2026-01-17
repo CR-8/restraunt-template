@@ -10,16 +10,28 @@ const Menu = () => {
  const [currentIndex, setCurrentIndex] = useState(0);
  
  useGSAP(() => {
-	gsap.fromTo('#title', { opacity: 0 }, { opacity: 1, duration: 1 });
-	gsap.fromTo('.dish-img img', { opacity: 0, xPercent: -100 }, {
-	 xPercent: 0, opacity: 1, duration: 1, ease: 'power1.inOut'
-	})
-	gsap.fromTo('.details h2', { yPercent: 100, opacity: 0 }, {
-	 yPercent: 0, opacity: 100, ease: 'power1.inOut'
-	})
-	gsap.fromTo('.details p', { yPercent: 100, opacity: 0 }, {
-	 yPercent: 0, opacity: 100, ease: 'power1.inOut'
-	})
+	const timeline = gsap.timeline();
+	
+	timeline
+	 .fromTo('#title', 
+		{ opacity: 0, y: 20 }, 
+		{ opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' }
+	 )
+	 .fromTo('.dish-img img', 
+		{ opacity: 0, y: 100, scale: 0.8 }, 
+		{ y: 0, opacity: 1, scale: 1, duration: 1, ease: 'power2.out' },
+		'-=0.3'
+	 )
+	 .fromTo('.details h2', 
+		{ yPercent: 100, opacity: 0 }, 
+		{ yPercent: 0, opacity: 1, duration: 0.8, ease: 'power1.inOut' },
+		'-=0.6'
+	 )
+	 .fromTo('.details p', 
+		{ yPercent: 100, opacity: 0 }, 
+		{ yPercent: 0, opacity: 1, duration: 0.8, ease: 'power1.inOut' },
+		'-=0.6'
+	 );
  }, [currentIndex]);
  
  const totalDishes = signatureDishes.length;
