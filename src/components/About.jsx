@@ -29,24 +29,24 @@ const About = () => {
 	 <div className="mb-16 md:px-0 px-5">
 		<div className="content">
 		 <div className="md:col-span-8">
-			<p className="badge">Best Cocktails</p>
+			<p className="badge">Authentic Indian Cuisine</p>
 			<h2>
-			 Where every detail matters <span className="text-white">-</span>
-				from muddle to garnish
+			 Where every spice matters <span className="text-white">-</span>
+				from kitchen to table
 			</h2>
 		 </div>
 		 
 		 <div className="sub-content">
 			<p>
-			 Every cocktail we serve is a reflection of our obsession with detail — from the first muddle to the final garnish. That care is what turns a simple drink into something truly memorable.
+			 Every dish we serve is a reflection of our passion for authentic Indian flavors — from carefully selecting spices to traditional cooking methods. That dedication is what transforms a meal into an unforgettable experience.
 			</p>
 			
 			<div>
 			 <p className="md:text-3xl text-xl font-bold">
-				<span>4.5</span>/5
+				<span>4.8</span>/5
 			 </p>
 			 <p className="text-sm text-white-100">
-				More than +12000 customers
+				Over 15,000+ happy customers
 			 </p>
 			</div>
 		 </div>

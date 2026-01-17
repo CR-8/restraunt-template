@@ -1,15 +1,15 @@
 const navLinks = [
  {
-	id: "cocktails",
-	title: "Cocktails",
+	id: "menu",
+	title: "Menu",
  },
  {
 	id: "about",
 	title: "About Us",
  },
  {
-	id: "work",
-	title: "The Art",
+	id: "testimonials",
+	title: "Reviews",
  },
  {
 	id: "contact",
@@ -17,57 +17,57 @@ const navLinks = [
  },
 ];
 
-const cocktailLists = [
+const appetizers = [
  {
-	name: "Chapel Hill Shiraz",
-	country: "AU",
-	detail: "Battle",
-	price: "$10",
+	name: "Paneer Tikka",
+	region: "North India",
+	detail: "Grilled cottage cheese with spices",
+	price: "₹350",
  },
  {
-	name: "Caten Malbee",
-	country: "AU",
-	detail: "Battle",
-	price: "$49",
+	name: "Samosa Chaat",
+	region: "Delhi",
+	detail: "Crispy samosas with chutneys",
+	price: "₹180",
  },
  {
-	name: "Rhino Pale Ale",
-	country: "CA",
-	detail: "750 ml",
-	price: "$20",
+	name: "Chicken 65",
+	region: "South India",
+	detail: "Spicy fried chicken",
+	price: "₹420",
  },
  {
-	name: "Irish Guinness",
-	country: "IE",
-	detail: "600 ml",
-	price: "$29",
+	name: "Hara Bhara Kabab",
+	region: "Lucknow",
+	detail: "Spinach & peas patties",
+	price: "₹290",
  },
 ];
 
-const mockTailLists = [
+const mainCourse = [
  {
-	name: "Tropical Bloom",
-	country: "US",
-	detail: "Battle",
-	price: "$10",
+	name: "Butter Chicken",
+	region: "Punjab",
+	detail: "Creamy tomato curry",
+	price: "₹480",
  },
  {
-	name: "Passionfruit Mint",
-	country: "US",
-	detail: "Battle",
-	price: "$49",
+	name: "Biryani (Veg/Chicken)",
+	region: "Hyderabad",
+	detail: "Fragrant rice with spices",
+	price: "₹380/₹520",
  },
  {
-	name: "Citrus Glow",
-	country: "CA",
-	detail: "750 ml",
-	price: "$20",
+	name: "Dal Makhani",
+	region: "Punjab",
+	detail: "Creamy black lentils",
+	price: "₹320",
  },
  {
-	name: "Lavender Fizz",
-	country: "IE",
-	detail: "600 ml",
-	price: "$29",
+	name: "Palak Paneer",
+	region: "North India",
+	detail: "Spinach with cottage cheese",
+	price: "₹360",
  },
 ];
 
@@ -87,33 +87,33 @@ const profileLists = [
 ];
 
 const featureLists = [
- "Perfectly balanced blends",
- "Garnished to perfection",
- "Ice-cold every time",
- "Expertly shaken & stirred",
+ "Authentic regional recipes",
+ "Fresh ingredients daily",
+ "Traditional cooking methods",
+ "Spice levels customizable",
 ];
 
 const goodLists = [
- "Handpicked ingredients",
- "Signature techniques",
- "Bartending artistry in action",
- "Freshly muddled flavors",
+ "Handpicked spices from India",
+ "Time-honored cooking methods",
+ "Culinary artistry in every dish",
+ "Freshly ground masalas",
 ];
 
 const storeInfo = {
  heading: "Where to Find Us",
- address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+ address: "123, MG Road, Sector 29, Gurgaon, Haryana 122001",
  contact: {
-	phone: "(555) 987-6543",
-	email: "hello@jsmcocktail.com",
+	phone: "+91 98765 43210",
+	email: "info@restauranttemplate.com",
  },
 };
 
 const openingHours = [
- { day: "Mon–Thu", time: "11:00am – 12am" },
- { day: "Fri", time: "11:00am – 2am" },
- { day: "Sat", time: "9:00am – 2am" },
- { day: "Sun", time: "9:00am – 1am" },
+ { day: "Mon–Thu", time: "11:00 AM – 11:00 PM IST" },
+ { day: "Fri", time: "11:00 AM – 11:30 PM IST" },
+ { day: "Sat", time: "10:00 AM – 11:30 PM IST" },
+ { day: "Sun", time: "10:00 AM – 11:00 PM IST" },
 ];
 
 const socials = [
@@ -169,15 +169,47 @@ const allCocktails = [
  },
 ];
 
+const testimonialsList = [
+ {
+	quote:
+	 "The food here is absolutely authentic! Every dish tastes like it's made by my grandmother. The spices are perfectly balanced and the flavors transport you straight to India. Best Indian restaurant in the city!",
+	name: "Rajesh Kumar",
+	designation: "Food Blogger",
+	src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1368&auto=format&fit=crop",
+ },
+ {
+	quote:
+	 "This restaurant has become our family's favorite spot! The ambiance is warm and inviting, and every dish is consistently delicious. Their biryani is to die for. Highly recommended for family gatherings!",
+	name: "Priya Sharma",
+	designation: "Regular Customer",
+	src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1368&auto=format&fit=crop",
+ },
+ {
+	quote:
+	 "As a food critic, I've dined at countless Indian restaurants. This one stands out for its authentic recipes, fresh ingredients, and impeccable service. The tandoori platter is exceptional!",
+	name: "Arjun Mehta",
+	designation: "Restaurant Critic",
+	src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1368&auto=format&fit=crop",
+ },
+ {
+	quote:
+	 "From the moment we walked in, we felt welcomed. The staff is incredibly courteous, the atmosphere is beautiful, and most importantly, the food is outstanding. A must-visit for anyone who loves authentic Indian cuisine!",
+	name: "Neha Patel",
+	designation: "Food Enthusiast",
+	src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1368&auto=format&fit=crop",
+ },
+];
+
 export {
  navLinks,
- cocktailLists,
- mockTailLists,
+ appetizers,
+ mainCourse,
  profileLists,
  featureLists,
  goodLists,
  openingHours,
  storeInfo,
  socials,
- allCocktails,
+ signatureDishes,
+ testimonialsList,
 };

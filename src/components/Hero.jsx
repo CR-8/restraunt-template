@@ -73,7 +73,7 @@ const Hero = () => {
  return (
 	<>
 	 <section id="hero" className="noisy">
-		<h1 className="title">MOJITO</h1>
+		<h1 className="title">BIRYANI</h1>
 		
 		<img
 		 src="/images/hero-left-leaf.png"
@@ -91,19 +91,19 @@ const Hero = () => {
 		 
 		 <div className="content">
 			<div className="space-y-5 hidden md:block">
-			 <p>Cool. Crisp. Classic.</p>
+			 <p>Authentic. Aromatic. Amazing.</p>
 			 <p className="subtitle">
-				Sip the Spirit <br /> of Summer
+				Experience the Taste <br /> of India
 			 </p>
 			</div>
 			
 			<div className="view-cocktails">
 			 <p className="subtitle">
-				Every cocktail on our menu is a blend of premium ingredients,
-				creative flair, and timeless recipes — designed to delight your
-				senses.
+				Every dish on our menu is crafted with authentic Indian spices,
+				traditional recipes, and fresh ingredients — designed to take your
+				taste buds on a journey through India.
 			 </p>
-			 <a href="#cocktails">View cocktails</a>
+			 <a href="#menu">View Our Menu</a>
 			</div>
 		 </div>
 		</div>
