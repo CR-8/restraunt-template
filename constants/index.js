@@ -210,6 +210,6 @@ export {
  openingHours,
  storeInfo,
  socials,
- signatureDishes,
+ allCocktails as signatureDishes,
  testimonialsList,
 };
